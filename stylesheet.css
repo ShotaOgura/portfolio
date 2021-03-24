@@ -1,0 +1,170 @@
+/* stylesheetの練習 */
+
+
+
+/*
+h1{
+	/* 文字色の指定 */
+	color:#ff0000;
+	
+	/* 文字サイズの指定 単位はpx */
+	font-size:30px;
+	
+	/* フォントの種類の指定 */
+	font-family:serif;
+
+	/* フォント名にスペースが入るときは""で囲む */
+	font-family:"Lucida Grande";
+	
+	/* 背景色の指定 */
+	background-color:#dddddd;
+	
+	/* 横幅の指定*/
+	width:500px;
+	
+	/* 高さの指定*/
+	height:80px;
+}
+
+*/
+
+img{
+	width:500px;
+
+	height:200px;
+}
+
+/* divで分割したclassごとにレイアウトを指定 */
+/* .(指定したclass名)の形でclassごとのCSS指定が可能*/
+.header{
+	background-color:#f7f2b4;
+
+	height:90px;
+}
+
+.header-logo{
+	font-size:36px;
+
+	float:left;
+	
+	/* paddingで余白のサイズを指定 */
+	/* 値が1つの場合は全方向に指定した大きさの余白が追加される */
+	/* padding-(top,bottom,left,right)の形だと指定した方向のみ余白が追加される */
+	/* スペースで区切るとまとめて指定が可能 */
+	/* 4つ並べると上,右,下,左(上から時計回り) 2つ並べると上下,左右 の順*/
+	padding:20px 40px;
+}
+
+.main{
+	padding:100px 80px;
+}
+
+.copy-container h1{
+	background-color:#fffff0;
+	font-size:140px;
+}
+
+.copy-container h2{
+	font-size:60px
+}
+
+/* spanで囲った要素に反映させる設定 */
+.copy-container span{
+	color:#ff4a4a;
+}
+
+.contents{
+	height:500px;
+
+	/* marginはborderの外側の余白を指定 */
+	/* それに対してpaddingはborderの内側の余白を指定 */
+	/* 指定方法はpaddingと同じ*/
+	margin:100px;
+}
+
+.contents-item{
+	float:left;
+	margin-right:3.26px;
+}
+
+.contents-item p{
+	font-size:24px;
+	margin-top:30px;
+}
+
+.contact-form{
+	padding-top:100px;
+}
+
+.section-title{
+	/* borderで要素に枠線を付けられる*/
+	/* -(top,bottom,left,right)で方向指定可能 指定のない場合は全方向に付く*/
+	/* border:(太さ) (種類) (色);で指定*/
+	border-bottom:2px solid #dee7ec;
+	
+	font-size:28px;
+	
+	padding-bottom:15px;
+	
+	margin-bottom:50px;
+}
+
+.footer{
+	background-color:#adff2f;
+
+	color:#ffffff;
+	
+	height:200px;
+	
+	padding:40px;
+}
+
+.footer-logo{
+	font-size:32px;
+	
+	float:left;
+}
+
+.footer-list{
+	float:right;
+}
+
+/* 全ての<li>要素に反映させたい設定はli{}の形 */
+li{
+	/* <li>要素の先頭につく黒点マークを無しに指定 */
+	list-style:none;
+}
+
+/* headerの<li>要素にのみ反映させたい設定は.header-list li{}の形 */
+.header-list li{
+	/* 要素を左から順に並べるように指定 */
+	float:left;
+	
+	padding:33px 20px;
+}
+
+/* footerの<li>要素にのみ反映させたい設定は.footer-list li{}の形 */
+.footer-list li{
+	padding:20px;
+
+}
+
+/* カンマで区切ることで複数のセレクタに同じCSSを適用可能 */
+input, textarea{
+	width:400px;
+	
+	margin-top:10px;
+	
+	margin-bottom:30px;
+	
+	padding:20px;
+	
+	font-size:18px;
+	
+	border:1px solid #dee7ec;
+}
+
+.contact-submit{
+	background-color:#e6e6fa;
+	color:#889eab;
+}
